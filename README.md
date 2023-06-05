@@ -27,11 +27,7 @@ Clona este repositorio en tu máquina local.
 
 		git clone git@github.com:CesarCarvalhal/nest-learn-api.git
     
-Navega hasta el directorio del proyecto.
-		
-		cd 
-		
-Instala las dependencias.
+Navega hasta el directorio del proyecto e instala las dependencias.
 	
 		npm install
 	
