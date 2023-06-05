@@ -48,9 +48,10 @@ Sigue estos pasos para instalar y configurar la aplicación Nest Learn:
  
 
 1. Clona este repositorio en tu máquina local.
-2. Navega hasta el directorio del proyecto.
-3. Ejecuta el comando `npm install` para instalar las dependencias.
-4. Configura las variables de entorno en un archivo `.env` con la siguiente información:
+    git clone https://github.com/CesarCarvalhal/nest-learn-api.git
+3. Navega hasta el directorio del proyecto.
+4. Ejecuta el comando `npm install` para instalar las dependencias.
+5. Configura las variables de entorno en un archivo `.env` con la siguiente información:
 
  
 
