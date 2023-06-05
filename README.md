@@ -34,7 +34,7 @@ Navega hasta el directorio del proyecto e instala las dependencias.
 Configura las variables de entorno en un archivo `.env` con la siguiente información:
 
  
- | Variable        | Descripción                                                                                          |
+ | Variable        | Detalles                                                                                          |
 |-----------------|------------------------------------------------------------------------------------------------------|
 | `URL`           | localhost/ |
 | `DBNAME`        | LearnDB    |
