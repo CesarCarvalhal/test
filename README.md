@@ -1,15 +1,9 @@
 # Nest Learn Api
-
- 
-
 API para la plataforma de aprendizaje Nest Learn.
 
  
 #
 ### Descripción
-
- 
-
 La API Nest Learn proporciona un conjunto de endpoints para interactuar con la plataforma de aprendizaje.
 
  
@@ -17,20 +11,13 @@ La API Nest Learn proporciona un conjunto de endpoints para interactuar con la p
 ### Documentación
 La documentación de la API se puede encontrar en Swagger en las siguientes direcciones URL:
 
- 
-
 - [https://vm15.netexlearning.cloud/api](https://vm15.netexlearning.cloud/api)
 - [https://vm15.netexlearning.cloud/api-json](https://vm15.netexlearning.cloud/api-json)
 
  
 #
 ### Requisitos previos
-
- 
-
 Antes de comenzar a utilizar la API Nest Learn, asegúrate de tener instaladas las siguientes herramientas y tecnologías:
-
- 
 
 - Node.js LTS
 - npm 
@@ -40,19 +27,21 @@ Antes de comenzar a utilizar la API Nest Learn, asegúrate de tener instaladas l
  
 #
 ### Instalación
-
 Sigue estos pasos para instalar y configurar la aplicación Nest Learn:
 
- 
-
 1. Clona este repositorio en tu máquina local.
-Instalación:
 
 		git clone https://github.com/CesarCarvalhal/nest-learn-api.git  
     
 3. Navega hasta el directorio del proyecto.
-4. Ejecuta el comando `npm install` para instalar las dependencias.
-5. Configura las variables de entorno en un archivo `.env` con la siguiente información:
+		
+		cd 
+		
+5. Instala las dependencias.
+	
+		npm install
+	
+7. Configura las variables de entorno en un archivo `.env` con la siguiente información:
 
  
 
@@ -71,12 +60,30 @@ Además, asegúrate de tener Docker instalado en tu sistema, y seguir los siguie
 
  
 
-1. docker pull mongo
-2. docker run --name mongo-learn -p 27017:27017 -d mongo
-3. sudo docker ps
-4. sudo docker cp ruta_carpeta_mongo-api/. CONTAINER_ID:/data/db/
-5. sudo docker exec -it CONTAINER_ID mongorestore --db LearnDB /data/db/
-6. Inicia la aplicación ejecutando el comando `npm run start`.
+1. Descarga de la imagen de MongoDB:
+
+		docker pull mongo
+		
+2. Crea un contenedor de MongoDB:
+
+		 docker run --name mongo-learn -p 27017:27017 -d mongo
+
+3. Verifica el estado del contenedor:
+
+		sudo docker ps
+		
+4. Copia la carpeta con los archivos de actividades y cursos a la carpeta del contenedor:
+
+		sudo docker cp ruta_carpeta_mongo-api/. CONTAINER_ID:/data/db/
+
+5. Restaura la base de datos:
+
+		sudo docker exec -it CONTAINER_ID mongorestore --db LearnDB /data/db/
+		
+6. Inicia la aplicación ejecutando el comando:
+
+		npm run start
+		
 7. El swagger estará disponible en `http://localhost:3001/api`.
 
  
@@ -85,13 +92,11 @@ Además, asegúrate de tener Docker instalado en tu sistema, y seguir los siguie
 ### Uso
 La API Nest Learn ofrece los siguientes endpoints principales:
 
- 
 
 #### Usuarios
 - `PATCH /users/update-nickname`: Actualizar nickname del usuario autenticado.
 - `GET /users/roles`: Obtener roles del usuario autenticado.
 
- 
 
 #### Actividades
 - `GET /rest/activities`: Obtener todas las actividades.
@@ -104,7 +109,6 @@ La API Nest Learn ofrece los siguientes endpoints principales:
 - `POST /rest/activities/{id}/view`: Marcar actividad como vista.
 - `PATCH /rest/activities/answer/{id}`: Verificar la respuesta de un estudiante a la actividad.
 
- 
 
 #### Cursos
 - `POST /rest/courses`: Crear curso.
