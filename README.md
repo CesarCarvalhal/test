@@ -39,10 +39,10 @@ Configura las variables de entorno en un archivo `.env` con la siguiente informa
 | `URL`           | localhost/ |
 | `DBNAME`        | LearnDB    |
 | `SECRET_KEY`    | secret_key      |
-| `CLIENT_ID`     | Identificador único de la aplicación cliente en Auth0.                                               |
-| `CLIENT_SECRET` | Clave secreta utilizada para autenticar las solicitudes de la aplicación en Auth0.                  |
-| `AUDIENCE`      | Audiencia para la cual se emite un token de acceso en Auth0.                                         |
-| `GRANT_TYPE`    | Tipo de concesión utilizado en el proceso de autenticación y autorización con Auth0.                |
+| `CLIENT_ID`     | (Identificador único de la aplicación cliente en Auth0. )                                              |
+| `CLIENT_SECRET` | (Clave secreta utilizada para autenticar las solicitudes de la aplicación en Auth0.)                  |
+| `AUDIENCE`      | (Audiencia para la cual se emite un token de acceso en Auth0.)                                         |
+| `GRANT_TYPE`    | (Tipo de concesión utilizado en el proceso de autenticación y autorización con Auth0.)                |
 
 
  
