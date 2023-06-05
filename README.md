@@ -24,19 +24,19 @@ Antes de comenzar a utilizar la API Nest Learn, asegúrate de tener instaladas l
 ### Instalación
 Sigue estos pasos para instalar y configurar la aplicación Nest Learn:
 
-1. Clona este repositorio en tu máquina local.
+Clona este repositorio en tu máquina local.
 
 		git clone https://github.com/CesarCarvalhal/nest-learn-api.git  
     
-3. Navega hasta el directorio del proyecto.
+Navega hasta el directorio del proyecto.
 		
 		cd 
 		
-5. Instala las dependencias.
+Instala las dependencias.
 	
 		npm install
 	
-7. Configura las variables de entorno en un archivo `.env` con la siguiente información:
+Configura las variables de entorno en un archivo `.env` con la siguiente información:
 
  
 
@@ -54,32 +54,31 @@ Sigue estos pasos para instalar y configurar la aplicación Nest Learn:
 Además, asegúrate de tener Docker instalado en tu sistema, y seguir los siguientes pasos.
 
  
-
-1. Descarga de la imagen de MongoDB:
+Descarga de la imagen de MongoDB:
 
 		docker pull mongo
 		
-2. Crea un contenedor de MongoDB:
+Crea un contenedor de MongoDB:
 
 		 docker run --name mongo-learn -p 27017:27017 -d mongo
 
-3. Verifica el estado del contenedor:
+Verifica el estado del contenedor:
 
 		sudo docker ps
 		
-4. Copia la carpeta con los archivos de actividades y cursos a la carpeta del contenedor:
+Copia la carpeta con los archivos de actividades y cursos a la carpeta del contenedor:
 
 		sudo docker cp ruta_carpeta_mongo-api/. CONTAINER_ID:/data/db/
 
-5. Restaura la base de datos:
+Restaura la base de datos:
 
 		sudo docker exec -it CONTAINER_ID mongorestore --db LearnDB /data/db/
 		
-6. Inicia la aplicación ejecutando el comando:
+Inicia la aplicación ejecutando el comando:
 
 		npm run start
 		
-7. El swagger estará disponible en `http://localhost:3001/api`.
+El swagger estará disponible en `http://localhost:3001/api`.
 
  
 
