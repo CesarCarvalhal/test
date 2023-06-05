@@ -11,7 +11,7 @@ La documentación de la API se puede encontrar en Swagger en la siguiente direcc
 
 #
 ### Requisitos previos
-Antes de comenzar a utilizar la API Nest Learn, asegúrate de tener instaladas las siguientes herramientas y tecnologías:
+Antes de comenzar a utilizar la Nest Learn Api, asegúrate de tener instaladas las siguientes herramientas y tecnologías:
 
 - Node.js LTS
 - npm 
