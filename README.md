@@ -40,6 +40,9 @@ Antes de comenzar a utilizar la API Nest Learn, asegúrate de tener instaladas l
  
 #
 ### Instalación
+Instalación:
+
+		npm install
 
  
 
