@@ -26,7 +26,7 @@ Sigue estos pasos para instalar y configurar la aplicación Nest Learn:
 
 Clona este repositorio en tu máquina local.
 
-		git clone https://github.com/CesarCarvalhal/nest-learn-api.git  
+		git clone git@github.com:CesarCarvalhal/nest-learn-api.git
     
 Navega hasta el directorio del proyecto.
 		
