@@ -1,11 +1,4 @@
 # Nest Learn Api
-API para la plataforma de aprendizaje Nest Learn.
-
- 
-
-
-
-### Descripción
 La API Nest Learn proporciona un conjunto de endpoints para interactuar con la plataforma de aprendizaje.
 
  
